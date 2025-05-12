@@ -1,1 +1,6 @@
 # FIREBIM_Document_Ontology
+Methodology developed by the Portuguese consortium, designed to enable the extraction of ontology individuals from documents in a faster and more efficient way.
+
+This methodology is based on a free GPT API and implemented using Python.
+
+All the steps that u need to follow is on "Methodology_LLM_DevsDoCode_commented.ipynb"
