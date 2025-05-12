@@ -1,0 +1,629 @@
+@prefix : <http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/> .
+
+<http://www.firebim.org/ontologies/> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://www.firebim.org/ontologies/> ;
+                                      <http://purl.org/dc/terms/created> "2025-02-25T00:00:00"^^xsd:dateTime ;
+                                      <http://purl.org/dc/terms/title> "FireBIM Regulation Ontology"@en .
+
+#################################################################
+<<<<<<< HEAD
+#    Annotation properties
+#################################################################
+
+=======
+#    Annotation properties
+#################################################################
+
+>>>>>>> 10c69cf (FireBIM project- Automated Methodology for Generating Individuals in Document Ontology)
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/affiliation
+<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+<<<<<<< HEAD
+#    Object Properties
+#################################################################
+
+=======
+#    Object Properties
+#################################################################
+
+>>>>>>> 10c69cf (FireBIM project- Automated Methodology for Generating Individuals in Document Ontology)
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/AnnexOf
+:AnnexOf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :isContained ;
+         rdfs:label "AnexoDe"@pt ,
+                    "AnnexOf"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/ArticleOf
+:ArticleOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isContained ;
+           rdfs:label "ArticleOf"@en ,
+                      "ArtigoDe"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/ChapterOf
+:ChapterOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isContained ;
+           rdfs:label "CapítuloDe"@pt ,
+                      "ChapterOf"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/IssuedBy
+:IssuedBy rdf:type owl:ObjectProperty ;
+          rdfs:range :Authority ;
+          rdfs:label "EmitidoPor"@pt ,
+                     "IssuedBy"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/ItemOf
+:ItemOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :isContained ;
+        rdfs:label "AlíneaDe"@pt ,
+                   "ItemOf" .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/SectionOf
+:SectionOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isContained ;
+           rdfs:label "SectionOf"@en ,
+                      "SecçãoDe"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/SubItemOf
+:SubItemOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isContained ;
+           rdfs:label "SubAlíneaDe"@pt ,
+                      "SubItemOf"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/SubSubItemOf
+:SubSubItemOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :isContained ;
+              rdfs:label "SubSubAlíneaDe"@pt ,
+                         "SubSubItemOf"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/TableOf
+:TableOf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :isContained ;
+         rdfs:label "TabelaDe"@pt ,
+                    "TableOf"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/TitleOf
+:TitleOf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :isContained ;
+         rdfs:label "TitleOf"@en ,
+                    "TítuloDe"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasAnnex
+:hasAnnex rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasSubdivision ;
+          rdfs:range :Annex ;
+          rdfs:comment "An object property pointing to an annex of the subject."@en ;
+          rdfs:label "TemAnexo"@pt ,
+                     "hasAnnex"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasAppendix
+:hasAppendix rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasSection ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:range :Appendix ;
+             rdfs:comment "An object property pointing to an appendix of the subject."@en ,
+                          "Een 'object property' die verwijst naar een appendix van iets."@nl ;
+             rdfs:label "hasAppendix"@en ,
+                        "heeft appendix"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasArticle
+:hasArticle rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasSubdivision ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:range :Article ;
+            rdfs:comment "An object property pointing to an article of the subject."@en ,
+                         "Een 'object property' die verwijst naar een artikel van iets."@nl ;
+            rdfs:label "hasArticle"@en ,
+                       "heeft artikel"@nl ,
+                       "temArtigo"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasBackwardReference
+:hasBackwardReference rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasReference ;
+                      rdfs:range :Reference ;
+                      rdfs:label "hasBackwardReference"@en ,
+                                 "heeft achterwaartse referentie"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasChapter
+:hasChapter rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasSection ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:range :Chapter ;
+            rdfs:comment "An object property pointing to a chapter of the subject."@en ,
+                         "Een 'object property' die verwijst naar een hoofdstuk van iets."@nl ;
+            rdfs:label "hasChapter"@en ,
+                       "heeft hoofdstuk"@nl ,
+                       "temCapítulo"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasEquation
+:hasEquation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasSection ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:range :Equation ;
+             rdfs:comment "An object property pointing to an equation of the subject."@en ,
+                          "Een 'object property' die verwijst naar een vergelijking van iets."@nl ;
+             rdfs:label "hasEquation"@en ,
+                        "heeft vergelijking"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasFigure
+:hasFigure rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasSection ;
+           rdf:type owl:TransitiveProperty ;
+           rdfs:range :Figure ;
+           rdfs:comment "An object property pointing to a figure of the subject."@en ,
+                        "Een 'object property' die verwijst naar een figuur van iets."@nl ;
+           rdfs:label "hasFigure"@en ,
+                      "heeft figuur"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasForwardReference
+:hasForwardReference rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasReference ;
+                     rdfs:range :Reference ;
+                     rdfs:label "hasForwardReference"@en ,
+                                "heeft voorwaartse referentie"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasItem
+:hasItem rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasSubdivision ;
+         rdfs:range :Item ;
+         rdfs:comment "An object property pointing to an item of the subject."@en ;
+         rdfs:label "TemAlinea"@pt ,
+                    "hasItem"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasMember
+:hasMember rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasSubdivision ;
+           rdf:type owl:TransitiveProperty ;
+           rdfs:range :Member ;
+           rdfs:comment "An object property pointing to a member of the subject."@en ,
+                        "Een 'object property' die verwijst naar een lid van iets."@nl ;
+           rdfs:label "hasMember"@en ,
+                      "heeft lid"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasParagraph
+:hasParagraph rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasSection ;
+              rdf:type owl:TransitiveProperty ;
+              rdfs:range :Paragraph ;
+              rdfs:comment "An object property pointing to a paragraph of the subject."@en ,
+                           "Een 'object property' die verwijst naar een paragraaf van iets."@nl ;
+              rdfs:label "hasParagraph"@en ,
+                         "heeft paragraaf"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasReference
+:hasReference rdf:type owl:ObjectProperty ;
+              rdfs:range :Reference ;
+              rdfs:comment "An object property pointing to a reference of something."@en ,
+                           "Een 'object property' die verwijst naar een referentie van iets."@nl ;
+              rdfs:label "hasReference"@en ,
+                         "heeft referentie"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasSection
+:hasSection rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasSubdivision ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:range :Block ;
+            rdfs:comment "An object property pointing to a block of the subject."@en ,
+                         "An object property pointing to a section of the subject."@en ;
+            rdfs:label ""@nl ,
+                       "hasBlock"@en ,
+                       "hasSection"@en ,
+                       "temBloco"@pt ,
+                       "temSecção"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasSubItem
+:hasSubItem rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasSubdivision ;
+            rdfs:range :SubItem ;
+            rdfs:comment "An object property pointing to a sub item of the subject."@en ;
+            rdfs:label "TemSubItem"@pt ,
+                       "hasSubItem"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasSubSubItem
+:hasSubSubItem rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSubdivision ;
+               rdfs:range :SubSubItem ;
+               rdfs:comment "An object property pointing to a sub sub item of the subject."@en ;
+               rdfs:label "TemSubSubItem"@pt ,
+                          "hasSubSubItem"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasSubchapter
+:hasSubchapter rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSection ;
+               rdf:type owl:TransitiveProperty ;
+               rdfs:range :Subchapter ;
+               rdfs:comment "An object property pointing to a subchapter of the subject."@en ,
+                            "Een 'object property' die verwijst naar een deelhoofdstuk van iets."@nl ;
+               rdfs:label "hasSubchapter"@en ,
+                          "heeft deelhoofdstuk"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasSubdivision
+:hasSubdivision rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:range :DocumentSubdivision ;
+                rdfs:comment "An object property pointing to a subdivision of the subject."@en ,
+                             "Een 'object property' die verwijst naar een onderverdeling van iets."@nl ;
+                rdfs:label "hasSubdivision"@en ,
+                           "heeft onderverdeling"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasTable
+:hasTable rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasSection ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:range :Table ;
+          rdfs:comment "An object property pointing to a table of the subject."@en ,
+                       "Een 'object property' die verwijst naar een tabel van iets."@nl ;
+          rdfs:label "hasTable"@en ,
+                     "heeft tabel"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasTitle
+:hasTitle rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasSubdivision ;
+          rdfs:range :Title ;
+          rdfs:comment "An object property pointing to a title of the subject."@en ;
+          rdfs:label "TemTitulo"@pt ,
+                     "hasTitle"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/isContained
+:isContained rdf:type owl:ObjectProperty ;
+             rdfs:label "SubdivisionOf"@en .
+
+
+#################################################################
+<<<<<<< HEAD
+#    Data properties
+#################################################################
+
+=======
+#    Data properties
+#################################################################
+
+>>>>>>> 10c69cf (FireBIM project- Automated Methodology for Generating Individuals in Document Ontology)
+###  http://www.firebim.org/ontologies/hasDefinition
+:hasDefinition rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasDefinition"@en .
+
+
+###  http://www.firebim.org/ontologies/hasKeyword
+:hasKeyword rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasKeyword"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasCountry
+:hasCountry rdf:type owl:DatatypeProperty ;
+            rdfs:label "hasCountry"@en ,
+                       "temPais"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:label "hasDescription"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasDesignator
+:hasDesignator rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasDesignator"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasID
+:hasID rdf:type owl:DatatypeProperty ;
+       rdfs:comment "A datatype property pointing to an ID of the subject."@en ,
+                    "Een 'datatype property' die verwijst naar een ID van iets."@nl ;
+       rdfs:label "hasID"@en ,
+                  "heeft ID"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/hasOriginalText
+:hasOriginalText rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "A datatype property pointing to the original text of the subject."@en ,
+                              "Een 'datatype property' die verwijst naar een originele tekst van iets."@nl ;
+                 rdfs:label "hasOriginalText"@en ,
+                            "heeft originele tekst"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/issued
+:issued rdf:type owl:DatatypeProperty ;
+        rdfs:comment "A datatype property pointing to the data the subject was issued."@en ,
+                     "Een 'datatype property' die verwijst naar de datum waarop iets is uitgevaardigd."@nl ;
+        rdfs:label "Issued"@en ,
+                   "uitgevaardigd"@nl .
+
+
+#################################################################
+<<<<<<< HEAD
+#    Classes
+#################################################################
+
+=======
+#    Classes
+#################################################################
+
+>>>>>>> 10c69cf (FireBIM project- Automated Methodology for Generating Individuals in Document Ontology)
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class .
+
+
+###  http://www.firebim.org/ontologies/Keyword
+:Keyword rdf:type owl:Class ;
+         rdfs:label "Keyword"@en ,
+                    "Palavra chave"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Annex
+:Annex rdf:type owl:Class ;
+       rdfs:subClassOf :DocumentSubdivision ;
+       rdfs:comment "An annex is a main structural component of the regulation (as opposed to an appendix, which is a supplement to the document), containing the normative content and subdivided into titles, chapters, articles and other elements."@en ,
+                    "Um anexo é um componente estrutural principal do regulamento (contrariamente ao appendix, que é um suplemento do documento), contendo o conteúdo normativo e subdividido em títulos, capítulos, artigos e outros elementos."@pt ;
+       rdfs:label "Annex"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Appendix
+:Appendix rdf:type owl:Class ;
+          rdfs:subClassOf :Block ;
+          rdfs:comment "A separate part at the end of a document with extra information."@en ,
+                       "Een apart deel aan het einde van een document met extra informatie."@nl ;
+          rdfs:label "Appendix"@en ,
+                     "Appendix"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf :DocumentSubdivision ;
+         rdfs:comment "A legal rule, constituated by one or more members."@en ,
+                      "Artigo"@pt ,
+                      "Een rechtsregel, samengesteld uit meerdere leden."@nl ;
+         rdfs:label "Article"@en ,
+                    "Artikel"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Authority
+:Authority rdf:type owl:Class ;
+           owl:disjointWith :DocumentSubdivision ;
+           rdfs:comment "A legal body with the power to make laws for a given jurisdiction."@en ,
+                        "Autoriteit"@nl ,
+                        "Een juridisch orgaan met de bevoegdheid om wetten te maken voor een bepaald rechtsgebied."@nl ;
+           rdfs:label "Authority"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Block
+:Block rdf:type owl:Class ;
+       rdfs:subClassOf :DocumentSubdivision ;
+       rdfs:comment "A section is an optional subdivision within a chapter, used to group articles that address a specific aspect of the chapter’s subject."@en ,
+                    "Onderdeel van een document."@nl ,
+                    "Part of a document."@en ,
+                    "Uma secção é uma subdivisão opcional dentro de um capítulo, usada para agrupar artigos que tratam de um aspeto específico do tema do capítulo."@pt ;
+       rdfs:label "Block"@en ,
+                  "Blok"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:subClassOf :Block ;
+         rdfs:comment "Capítulo"@pt ,
+                      "Onderdeel van een document, meestal genummerd."@nl ,
+                      "Part of a document, usually referred to with a number."@en ;
+         rdfs:label "Chapter"@en ,
+                    "Hoofdstuk"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Document
+:Document rdf:type owl:Class ;
+          rdfs:comment "A record of information."@en ,
+                       "Een registratie van informatie."@nl ;
+          rdfs:label "Document"@en ,
+                     "Document"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/DocumentSubdivision
+:DocumentSubdivision rdf:type owl:Class ;
+                     rdfs:comment "Een onderdeel van een document."@nl ,
+                                  "A part of a document." ;
+                     rdfs:label "Document Subdivision"@en ,
+                                "Documentonderdeel"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Equation
+:Equation rdf:type owl:Class ;
+          rdfs:subClassOf :Block ;
+          rdfs:comment "A mathematical statement expressing the equality of two mathematical expressions."@en ,
+                       "Een wiskundig statement dat de gelijkheid van twee wiskundige uitdrukkingen uitdrukt."@nl ;
+          rdfs:label "Equation"@en ,
+                     "Vergelijking"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Figure
+:Figure rdf:type owl:Class ;
+        rdfs:subClassOf :Block ;
+        rdfs:comment "A picture, drawing, or other form of visual information."@en ,
+                     "Een afbeelding, tekening, of andere vorm van visuele informatie."@nl ;
+        rdfs:label "Figure"@en ,
+                   "Figuur"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Item
+:Item rdf:type owl:Class ;
+      rdfs:subClassOf :DocumentSubdivision ;
+      rdfs:comment "Alinea"@pt ,
+                   "An item is a subdivision of an article, often identified by numbers (e.g., 1, 2, 3...)"@en ,
+                   "Um item é uma subdivisão de um artigo, frequentemente identificada por números (ex: 1, 2, 3...)"@pt ;
+      rdfs:label "Item"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Member
+:Member rdf:type owl:Class ;
+        rdfs:subClassOf :DocumentSubdivision ;
+        rdfs:comment "Deel van een artikel. De exacte vorm van het lid is ongedefiniëerd en kan bijvoorbeeld een zin, een lijstonderdeel of een combinatie daarvan zijn, afhankelijk van de structuur die het best past bij het specifieke regelgevingsdocument."@nl ,
+                     "Part of an article. The exact form of the member is rather arbitrary, and can for example be a sentence, a list item, or a combination of them, depending on the structure that best fits the particular regulatory document."@en ;
+        rdfs:label "Lid"@nl ,
+                   "Member"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Paragraph
+:Paragraph rdf:type owl:Class ;
+           rdfs:subClassOf :Block ;
+           rdfs:comment "A short part of a text, arranged as a separate block of text."@en ,
+                        "Een kort deel van een tekst, gerangschikt als een afzonderlijk tekstblok."@nl ,
+                        "Parágrafo"@pt ;
+           rdfs:label "Paragraaf"@nl ,
+                      "Paragraph"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Reference
+:Reference rdf:type owl:Class ;
+           rdfs:comment "A mention of something showing where particular information was found."@en ,
+                        "Een vermelding van iets die aangeeft waar bepaalde informatie is gevonden."@nl ;
+           rdfs:label "Reference"@en ,
+                      "Referentie"@nl .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Section
+:Section rdf:type owl:Class ;
+         rdfs:subClassOf :DocumentSubdivision ;
+         rdfs:comment "A section is a group of articles"@en ,
+                      "Uma secção é um agrupamento de artigos"@pt ;
+         rdfs:label "Section"@en ,
+                    "Secção"@pt .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/SubItem
+:SubItem rdf:type owl:Class ;
+         rdfs:subClassOf :Item ;
+         rdfs:comment "A sub item is a further subdivision of an alínea, commonly identified by lowercase letters (e.g., a), b), c)...), and used to provide additional detail."@en ,
+                      "Sub alinea"@pt ,
+                      "Um sub item é uma subdivisão de uma alínea, normalmente identificada por letras minúsculas (por exemplo, a), b), c)...), e utilizada para fornecer pormenores adicionais."@pt ;
+         rdfs:label "Sub item"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/SubSubItem
+:SubSubItem rdf:type owl:Class ;
+            rdfs:subClassOf :SubItem ;
+            rdfs:comment "A sub sub item is an additional subdivision within a subalínea, used to further elaborate the content. It is often identified by Roman numerals (e.g., i), ii), iii)...)."@en ,
+                         "Sub sub alinea"@pt ,
+                         "Um sub sub item é uma subdivisão adicional dentro de uma subalínea, usada para aprofundar ainda mais o conteúdo. Pode ser identificada por numeração romana (ex: i), ii), iii)...)"@pt ;
+            rdfs:label "Sub sub item"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Subchapter
+:Subchapter rdf:type owl:Class ;
+            rdfs:subClassOf :Block ;
+            rdfs:comment "A part of a chapter, usually referred to with a number."@en ,
+                         "Een deel van een hoofdstuk, meestal genummerd."@nl ;
+            rdfs:label "Deelhoofdstuk"@nl ,
+                       "Subchapter"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Table
+:Table rdf:type owl:Class ;
+       rdfs:subClassOf :Block ;
+       rdfs:comment "An arrangement of data in rows and columns."@en ,
+                    "Een ordening van gegevens in rijen en kolommen."@nl ;
+       rdfs:label "Tabel"@nl ,
+                  "Table"@en .
+
+
+###  http://www.semanticweb.org/s135938/ontologies/2025/1/untitled-ontology-11/Title
+:Title rdf:type owl:Class ;
+       rdfs:subClassOf :DocumentSubdivision ;
+       rdfs:comment "A division that groups related chapters under a common theme."@en ,
+                    "Título"@pt ,
+                    "Uma divisão que agrupa capítulos relacionados entre si sob um tema comum."@pt ;
+       rdfs:label "Title"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

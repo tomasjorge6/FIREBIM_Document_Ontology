@@ -1,0 +1,93 @@
+<<<<<<< HEAD
+Sub FixarNumeracao_KeepOriginal()
+    Dim para As Paragraph
+    Dim n As Long, total As Long
+    
+    '––– 1. Recolhe ListString + recuos de TODOS os parágrafos –––'
+    total = ActiveDocument.Paragraphs.Count
+    ReDim ListText(1 To total) As String
+    ReDim LeftIndent(1 To total) As Single
+    ReDim FirstIndent(1 To total) As Single
+    
+    n = 1
+    For Each para In ActiveDocument.Paragraphs
+        If para.Range.ListFormat.ListType <> wdListNoNumbering Then
+            ListText(n) = para.Range.ListFormat.ListString    'texto literal da numeração
+        Else
+            ListText(n) = ""                                  'parágrafo sem lista
+        End If
+        LeftIndent(n) = para.LeftIndent
+        FirstIndent(n) = para.FirstLineIndent
+        n = n + 1
+    Next para
+    
+    '––– 2. Percorre de novo e substitui –––'
+    n = 1
+    For Each para In ActiveDocument.Paragraphs
+        If ListText(n) <> "" Then
+            Dim rng As Range
+            Set rng = para.Range.Duplicate      'cópia segura
+            
+            'Remove a lista automática
+            rng.ListFormat.RemoveNumbers
+            
+            'Repõe recuos exactos
+            para.LeftIndent = LeftIndent(n)
+            para.FirstLineIndent = FirstIndent(n)
+            
+            'Insere o número/letra original + espaço
+            rng.InsertBefore ListText(n) & " "
+        End If
+        n = n + 1
+    Next para
+    
+    MsgBox "? Numeração fixada mantendo exactamente o que estava no documento!", vbInformation
+End Sub
+
+=======
+Sub FixarNumeracao_KeepOriginal()
+    Dim para As Paragraph
+    Dim n As Long, total As Long
+    
+    '––– 1. Recolhe ListString + recuos de TODOS os parágrafos –––'
+    total = ActiveDocument.Paragraphs.Count
+    ReDim ListText(1 To total) As String
+    ReDim LeftIndent(1 To total) As Single
+    ReDim FirstIndent(1 To total) As Single
+    
+    n = 1
+    For Each para In ActiveDocument.Paragraphs
+        If para.Range.ListFormat.ListType <> wdListNoNumbering Then
+            ListText(n) = para.Range.ListFormat.ListString    'texto literal da numeração
+        Else
+            ListText(n) = ""                                  'parágrafo sem lista
+        End If
+        LeftIndent(n) = para.LeftIndent
+        FirstIndent(n) = para.FirstLineIndent
+        n = n + 1
+    Next para
+    
+    '––– 2. Percorre de novo e substitui –––'
+    n = 1
+    For Each para In ActiveDocument.Paragraphs
+        If ListText(n) <> "" Then
+            Dim rng As Range
+            Set rng = para.Range.Duplicate      'cópia segura
+            
+            'Remove a lista automática
+            rng.ListFormat.RemoveNumbers
+            
+            'Repõe recuos exactos
+            para.LeftIndent = LeftIndent(n)
+            para.FirstLineIndent = FirstIndent(n)
+            
+            'Insere o número/letra original + espaço
+            rng.InsertBefore ListText(n) & " "
+        End If
+        n = n + 1
+    Next para
+    
+    MsgBox "? Numeração fixada mantendo exactamente o que estava no documento!", vbInformation
+End Sub
+
+>>>>>>> 10c69cf (FireBIM project- Automated Methodology for Generating Individuals in Document Ontology)
